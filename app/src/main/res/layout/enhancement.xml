@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Title"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="@string/subEnTitle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="@integer/texttitleweight"
+
+                        >
+                        <Spinner
+
+                            android:id="@+id/spinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+
+                            android:entries="@array/expertise_arrays"/>
+
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+
+
+
+                            >
+
+
+                            <RadioButton
+
+                                android:id="@+id/radioButton3"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Hourly Payment" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton4"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="1-Time Payment" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="@integer/textboxWeight"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editText"
+                            android:layout_width="0dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="First Name"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Last Name"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="@integer/texttitleweight"
+
+                        >
+
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+
+                            >
+
+
+                            <RadioButton
+
+                                android:id="@+id/radioButton2"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Male" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Female" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+
+
+                    <EditText
+                        android:id="@+id/wp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/textboxWeight"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:hint="Years of work experience"
+
+                        android:inputType="number" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+
+
+                    <EditText
+                        android:id="@+id/radd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/textboxWeight"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:hint="Residential Address"
+
+                        android:inputType="textPostalAddress" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+
+
+
+                    <EditText
+                        android:id="@+id/emailinput"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/textboxWeight"
+                        android:textAlignment="center"
+
+                        android:ems="10"
+                        android:hint="example@gmail.com"
+                        android:inputType="textWebEmailAddress" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+
+
+
+                    <EditText
+                        android:id="@+id/dob"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/textboxWeight"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:hint="Date of Birth"
+
+                        android:inputType="date" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+
+
+                    <EditText
+                        android:id="@+id/edlevel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/textboxWeight"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:hint="Education Level"
+
+                        android:inputType="text" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+
+
+                    <EditText
+                        android:id="@+id/oskills"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/textboxWeight"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:hint="Other Skills"
+
+                        android:inputType="text" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+
+
+                    <EditText
+                        android:id="@+id/lsalary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/textboxWeight"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:hint="Last Drawn Salary"
+
+                        android:inputType="numberDecimal" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="Receive email alerts on available job positions"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="Automatically send resume"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:padding="@dimen/padding">
+
+
+
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="2"
+                        android:background="@android:color/darker_gray"
+                        android:text="Register"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
